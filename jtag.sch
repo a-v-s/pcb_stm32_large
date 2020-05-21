@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 2 4
+Sheet 2 5
 Title ""
 Date ""
 Rev ""
@@ -14,10 +14,10 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L Connector_Generic:Conn_02x05_Odd_Even J?
+L Connector_Generic:Conn_02x05_Odd_Even J7
 U 1 1 5EC82D47
 P 4700 2500
-F 0 "J?" H 4750 2917 50  0000 C CNN
+F 0 "J7" H 4750 2917 50  0000 C CNN
 F 1 "Conn_02x05_Odd_Even" H 4750 2826 50  0000 C CNN
 F 2 "Connector_PinHeader_1.27mm:PinHeader_2x05_P1.27mm_Vertical" H 4700 2500 50  0001 C CNN
 F 3 "~" H 4700 2500 50  0001 C CNN
