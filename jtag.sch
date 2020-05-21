@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 2 5
+Sheet 2 6
 Title ""
 Date ""
 Rev ""
@@ -33,13 +33,15 @@ GND
 Text GLabel 4500 2700 0    50   Input ~ 0
 GND
 Text GLabel 5000 2300 2    50   Input ~ 0
-TMS
+JTMS
 Text GLabel 5000 2400 2    50   Input ~ 0
-TCK
+JTCK
 Text GLabel 5000 2500 2    50   Input ~ 0
-TDO
+JTDO
 Text GLabel 5000 2600 2    50   Input ~ 0
-TDI
+JTDI
 Text GLabel 5000 2700 2    50   Input ~ 0
-nSRST
+nRST
+Text Notes 5400 2750 0    50   ~ 0
+System or Target Reset (JnTRST)?
 $EndSCHEMATC

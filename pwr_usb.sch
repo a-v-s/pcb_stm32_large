@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 3 5
+Sheet 3 6
 Title ""
 Date ""
 Rev ""
@@ -24,7 +24,7 @@ F 3 "~" H 2300 1850 50  0001 C CNN
 	1    2150 1900
 	1    0    0    -1  
 $EndComp
-Text GLabel 2450 1700 2    50   Input ~ 0
+Text GLabel 3350 1700 2    50   Input ~ 0
 USB_VBUS
 Text GLabel 3350 1900 2    50   Input ~ 0
 USB_D+
@@ -57,7 +57,7 @@ L Jumper:SolderJumper_2_Bridged JP1
 U 1 1 5EC67334
 P 3200 1900
 F 0 "JP1" H 3200 2105 50  0000 C CNN
-F 1 "SJ" H 3200 2014 50  0000 C CNN
+F 1 "D+" H 3200 2014 50  0000 C CNN
 F 2 "Jumper:SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm" H 3200 1900 50  0001 C CNN
 F 3 "~" H 3200 1900 50  0001 C CNN
 	1    3200 1900
@@ -68,19 +68,19 @@ L Jumper:SolderJumper_2_Bridged JP2
 U 1 1 5EC680BB
 P 2900 2000
 F 0 "JP2" H 2900 2205 50  0000 C CNN
-F 1 "SJ" H 2900 2114 50  0000 C CNN
+F 1 "D-" H 2900 2114 50  0000 C CNN
 F 2 "Jumper:SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm" H 2900 2000 50  0001 C CNN
 F 3 "~" H 2900 2000 50  0001 C CNN
 	1    2900 2000
 	1    0    0    -1  
 $EndComp
 $Comp
-L Jumper:SolderJumper_2_Bridged JP3
+L Jumper:SolderJumper_2_Open JP3
 U 1 1 5EC68ED2
 P 2600 2100
 F 0 "JP3" H 2600 2305 50  0000 C CNN
-F 1 "SJ" H 2600 2214 50  0000 C CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm" H 2600 2100 50  0001 C CNN
+F 1 "ID" H 2600 2214 50  0000 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 2600 2100 50  0001 C CNN
 F 3 "~" H 2600 2100 50  0001 C CNN
 	1    2600 2100
 	1    0    0    -1  
@@ -178,31 +178,29 @@ Wire Wire Line
 $Comp
 L Device:D_Schottky D1
 U 1 1 5EC6D77A
-P 4300 3100
-F 0 "D1" H 4300 2883 50  0000 C CNN
-F 1 "D_Schottky" H 4300 2974 50  0000 C CNN
-F 2 "Diode_SMD:D_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 4300 3100 50  0001 C CNN
-F 3 "~" H 4300 3100 50  0001 C CNN
-	1    4300 3100
+P 3350 1350
+F 0 "D1" H 3350 1133 50  0000 C CNN
+F 1 "D_Schottky" H 3350 1224 50  0000 C CNN
+F 2 "Diode_SMD:D_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 3350 1350 50  0001 C CNN
+F 3 "~" H 3350 1350 50  0001 C CNN
+	1    3350 1350
 	-1   0    0    1   
 $EndComp
-Text GLabel 4150 3100 0    50   Input ~ 0
-USB_VBUS
 $Comp
 L power:+5V #PWR0109
 U 1 1 5EC6E280
-P 4700 3050
-F 0 "#PWR0109" H 4700 2900 50  0001 C CNN
-F 1 "+5V" H 4715 3223 50  0000 C CNN
-F 2 "" H 4700 3050 50  0001 C CNN
-F 3 "" H 4700 3050 50  0001 C CNN
-	1    4700 3050
+P 3750 1300
+F 0 "#PWR0109" H 3750 1150 50  0001 C CNN
+F 1 "+5V" H 3765 1473 50  0000 C CNN
+F 2 "" H 3750 1300 50  0001 C CNN
+F 3 "" H 3750 1300 50  0001 C CNN
+	1    3750 1300
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4450 3100 4700 3100
+	3500 1350 3750 1350
 Wire Wire Line
-	4700 3100 4700 3050
+	3750 1350 3750 1300
 $Comp
 L Regulator_Linear:MCP1700-3302E_SOT23 U1
 U 1 1 5EC7570B
@@ -214,4 +212,26 @@ F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/20001826D.pdf" H 6350 1700 
 	1    6350 1700
 	1    0    0    -1  
 $EndComp
+$Comp
+L Jumper:SolderJumper_2_Open JP5
+U 1 1 5ECBE30F
+P 2900 1700
+F 0 "JP5" H 2900 1905 50  0000 C CNN
+F 1 "VBUS" H 2900 1814 50  0000 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 2900 1700 50  0001 C CNN
+F 3 "~" H 2900 1700 50  0001 C CNN
+	1    2900 1700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3350 1700 3050 1700
+Wire Wire Line
+	2750 1700 2600 1700
+Wire Wire Line
+	3200 1350 2600 1350
+Wire Wire Line
+	2600 1350 2600 1700
+Connection ~ 2600 1700
+Wire Wire Line
+	2600 1700 2450 1700
 $EndSCHEMATC

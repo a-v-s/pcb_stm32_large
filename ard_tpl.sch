@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 5
+Sheet 1 6
 Title ""
 Date ""
 Rev ""
@@ -19,7 +19,7 @@ U 1 1 5EC501C4
 P 1350 1250
 F 0 "J2" H 1430 1242 50  0000 L CNN
 F 1 "Conn_01x10" H 1430 1151 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x10_P2.54mm_Vertical" H 1350 1250 50  0001 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x10_P2.54mm_Vertical" H 1350 1250 50  0001 C CNN
 F 3 "~" H 1350 1250 50  0001 C CNN
 	1    1350 1250
 	1    0    0    -1  
@@ -30,7 +30,7 @@ U 1 1 5EC51601
 P 1350 2250
 F 0 "J4" H 1430 2242 50  0000 L CNN
 F 1 "Conn_01x08" H 1430 2151 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x08_P2.54mm_Vertical" H 1350 2250 50  0001 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x08_P2.54mm_Vertical" H 1350 2250 50  0001 C CNN
 F 3 "~" H 1350 2250 50  0001 C CNN
 	1    1350 2250
 	1    0    0    -1  
@@ -41,7 +41,7 @@ U 1 1 5EC52062
 P 1350 3150
 F 0 "J6" H 1430 3142 50  0000 L CNN
 F 1 "Conn_01x08" H 1430 3051 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x08_P2.54mm_Vertical" H 1350 3150 50  0001 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x08_P2.54mm_Vertical" H 1350 3150 50  0001 C CNN
 F 3 "~" H 1350 3150 50  0001 C CNN
 	1    1350 3150
 	1    0    0    -1  
@@ -52,7 +52,7 @@ U 1 1 5EC529E7
 P 2950 1150
 F 0 "J1" H 3030 1142 50  0000 L CNN
 F 1 "Conn_01x08" H 3030 1051 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x08_P2.54mm_Vertical" H 2950 1150 50  0001 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x08_P2.54mm_Vertical" H 2950 1150 50  0001 C CNN
 F 3 "~" H 2950 1150 50  0001 C CNN
 	1    2950 1150
 	1    0    0    -1  
@@ -63,7 +63,7 @@ U 1 1 5EC54471
 P 2950 2050
 F 0 "J3" H 3030 2042 50  0000 L CNN
 F 1 "Conn_01x08" H 3030 1951 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x08_P2.54mm_Vertical" H 2950 2050 50  0001 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x08_P2.54mm_Vertical" H 2950 2050 50  0001 C CNN
 F 3 "~" H 2950 2050 50  0001 C CNN
 	1    2950 2050
 	1    0    0    -1  
@@ -74,7 +74,7 @@ U 1 1 5EC56B16
 P 2950 2950
 F 0 "J5" H 3030 2942 50  0000 L CNN
 F 1 "Conn_01x08" H 3030 2851 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x08_P2.54mm_Vertical" H 2950 2950 50  0001 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x08_P2.54mm_Vertical" H 2950 2950 50  0001 C CNN
 F 3 "~" H 2950 2950 50  0001 C CNN
 	1    2950 2950
 	1    0    0    -1  
@@ -260,8 +260,72 @@ F1 "pwr_jack.sch" 50
 $EndSheet
 $Sheet
 S 4250 5100 900  700 
-U 5EC64ACD
+U 5EC8409C
 F0 "stm32" 50
 F1 "stm32.sch" 50
 $EndSheet
+$Sheet
+S 5350 5100 950  700 
+U 5EC8958F
+F0 "rtcbat" 50
+F1 "rtcbat.sch" 50
+$EndSheet
+$Comp
+L power:+3V8 #PWR0129
+U 1 1 5EC9F63C
+P 1350 6350
+F 0 "#PWR0129" H 1350 6200 50  0001 C CNN
+F 1 "+3V8" H 1365 6523 50  0000 C CNN
+F 2 "" H 1350 6350 50  0001 C CNN
+F 3 "" H 1350 6350 50  0001 C CNN
+	1    1350 6350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Jumper:SolderJumper_2_Bridged JP?
+U 1 1 5ECA2490
+P 1600 6500
+AR Path="/5EC6493D/5ECA2490" Ref="JP?"  Part="1" 
+AR Path="/5ECA2490" Ref="JP4"  Part="1" 
+F 0 "JP4" H 1600 6705 50  0000 C CNN
+F 1 "SJ" H 1600 6614 50  0000 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm" H 1600 6500 50  0001 C CNN
+F 3 "~" H 1600 6500 50  0001 C CNN
+	1    1600 6500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0130
+U 1 1 5ECA28E1
+P 2150 6350
+F 0 "#PWR0130" H 2150 6200 50  0001 C CNN
+F 1 "+5V" H 2165 6523 50  0000 C CNN
+F 2 "" H 2150 6350 50  0001 C CNN
+F 3 "" H 2150 6350 50  0001 C CNN
+	1    2150 6350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1350 6350 1350 6500
+Wire Wire Line
+	1350 6500 1450 6500
+$Comp
+L Device:D_Schottky D?
+U 1 1 5ECA4BDF
+P 1950 6500
+AR Path="/5EC64ACD/5ECA4BDF" Ref="D?"  Part="1" 
+AR Path="/5ECA4BDF" Ref="D6"  Part="1" 
+F 0 "D6" V 1996 6420 50  0000 R CNN
+F 1 "D_Schottky" V 1905 6420 50  0000 R CNN
+F 2 "Diode_SMD:D_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 1950 6500 50  0001 C CNN
+F 3 "~" H 1950 6500 50  0001 C CNN
+	1    1950 6500
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1800 6500 1750 6500
+Wire Wire Line
+	2100 6500 2150 6500
+Wire Wire Line
+	2150 6500 2150 6350
 $EndSCHEMATC
