@@ -1,0 +1,93 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 6 6
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Device:Battery_Cell BT1
+U 1 1 5EC89BA1
+P 4200 3050
+F 0 "BT1" H 4318 3146 50  0000 L CNN
+F 1 "Battery_Cell" H 4318 3055 50  0000 L CNN
+F 2 "AvS_Battery:QJ1220-2SMT" V 4200 3110 50  0001 C CNN
+F 3 "~" V 4200 3110 50  0001 C CNN
+	1    4200 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0126
+U 1 1 5EC89EC5
+P 4200 3150
+F 0 "#PWR0126" H 4200 2900 50  0001 C CNN
+F 1 "GND" H 4205 2977 50  0000 C CNN
+F 2 "" H 4200 3150 50  0001 C CNN
+F 3 "" H 4200 3150 50  0001 C CNN
+	1    4200 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+BATT #PWR0127
+U 1 1 5EC8A503
+P 4200 2300
+F 0 "#PWR0127" H 4200 2150 50  0001 C CNN
+F 1 "+BATT" H 4215 2473 50  0000 C CNN
+F 2 "" H 4200 2300 50  0001 C CNN
+F 3 "" H 4200 2300 50  0001 C CNN
+	1    4200 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR0128
+U 1 1 5EC8A834
+P 3550 2250
+F 0 "#PWR0128" H 3550 2100 50  0001 C CNN
+F 1 "+3V3" H 3565 2423 50  0000 C CNN
+F 2 "" H 3550 2250 50  0001 C CNN
+F 3 "" H 3550 2250 50  0001 C CNN
+	1    3550 2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D_Schottky D5
+U 1 1 5EC8ABE3
+P 4200 2550
+F 0 "D5" V 4154 2630 50  0000 L CNN
+F 1 "D_Schottky" V 4245 2630 50  0000 L CNN
+F 2 "Diode_SMD:D_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 4200 2550 50  0001 C CNN
+F 3 "~" H 4200 2550 50  0001 C CNN
+	1    4200 2550
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:D_Schottky D4
+U 1 1 5EC8B2B4
+P 3900 2400
+F 0 "D4" H 3900 2183 50  0000 C CNN
+F 1 "D_Schottky" H 3900 2274 50  0000 C CNN
+F 2 "Diode_SMD:D_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 3900 2400 50  0001 C CNN
+F 3 "~" H 3900 2400 50  0001 C CNN
+	1    3900 2400
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4200 2300 4200 2400
+Wire Wire Line
+	4200 2700 4200 2850
+Wire Wire Line
+	4050 2400 4200 2400
+Connection ~ 4200 2400
+Wire Wire Line
+	3750 2400 3550 2400
+Wire Wire Line
+	3550 2400 3550 2250
+$EndSCHEMATC
