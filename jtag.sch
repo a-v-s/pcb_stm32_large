@@ -41,7 +41,7 @@ JTDO
 Text GLabel 5000 2600 2    50   Input ~ 0
 JTDI
 Text GLabel 5000 2700 2    50   Input ~ 0
-nRST
+nSRST
 Text Notes 5400 2750 0    50   ~ 0
 System or Target Reset (JnTRST)?
 $EndSCHEMATC
